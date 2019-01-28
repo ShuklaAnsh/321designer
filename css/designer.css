@@ -1,0 +1,380 @@
+html, body {
+	margin: 0 auto;
+	font-family: 'Amiko', sans-serif;
+	background-color: whitesmoke;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-family: 'Arial', serif;
+}
+
+/* nav */
+
+nav {
+	position: fixed;
+	top: 0%;
+	min-height: 74px;
+	width: 100%;
+	background-color: #282923;
+	z-index: 100;
+	text-align: center;
+	/* box shadow */
+	-moz-box-shadow:	0px 5px 10px rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow:	0px 5px 10px rgba(0, 0, 0, 0.6);
+	box-shadow: 		0px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav ul li {
+	display: inline;
+	color: whitesmoke;
+	font-size: 25px;
+	line-height: 74px;
+	padding: 21px 30px 21px 30px;
+}
+
+nav ul li:hover{
+	background-color: #464646;
+	cursor: pointer;
+}
+
+nav #company-icon {
+	position: fixed;
+	margin-left: 25px;
+	margin-top: 10px;
+	float: left;
+}
+
+nav #company {
+	position: fixed;
+	margin-left: 110px;
+	color: whitesmoke;
+	font-size: 25px;
+	line-height: 74px;
+	float: left;
+}
+
+/* header */
+
+#banner {
+	position: relative;
+	background-image: url('../assets/designer_banner.jpg');
+	margin-top:74px;
+	width: 100%;
+	height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#banner_img {
+	width: 100%;
+}
+
+#header {
+	position: relative;
+	/*margin-top:74px;*/
+	width: 100%;
+	height: 75vh;
+	background: whitesmoke;
+}
+
+#header:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.5;
+    background-image: url('../assets/company_header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* about */
+
+#about {
+	display: table;
+	width: 100%;
+    background-color: #282923;
+}
+
+#about div {
+    position: relative;
+	display: table-cell;
+	vertical-align: middle;
+    /*padding: 50px;*/
+}
+
+#about div p {
+    text-align: center;
+	font-size: 1.5em;
+	padding: 4em;
+	color: whitesmoke;
+    background-color: #282923;
+}
+
+/* team */
+
+#team {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #282923;
+}
+
+#team .member {
+	background-color: #f1f1f1;
+	border: 4px solid #393939;
+	width: 400px;
+	height: 400px;
+	margin: 2.5vw;
+	font-size: 30px;
+	/* background img */
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#team #details {
+	min-height: 400px;
+	width: 100%;
+}
+
+#team #details p {
+	color: whitesmoke;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#team #details:hover {
+	background-color: rgba(60, 60, 60, 0.6);
+}
+
+#team #details:hover .hidden-text{
+	visibility: visible;
+}
+
+#team #name {
+}
+
+h1 {
+	color: #280240;
+}
+
+#team p {
+	padding: 20px;
+	margin: 0;
+}
+
+#team #role {
+	font-size: 15px;
+}
+
+#team #description {
+	font-size: 19px;
+}
+
+#ansh {
+	background-image: url(../assets/designer_Ansh.jpg);
+}
+
+#andrew {
+	background-image: url(../assets/designer_Andrew.jpg);
+}
+
+#possum {
+	background-image: url(../assets/designer_Possum.jpg);
+}
+
+#connor {
+	background-image: url(../assets/designer_Connor.jpg);
+}
+
+#landon {
+	background-image: url(../assets/designer_Landon.jpg);
+}
+
+#isaac {
+	background-image: url(../assets/designer_Isaac.jpg);
+}
+
+#ross {
+	background-image: url(../assets/designer_Ross.jpg);
+}
+
+#nicole {
+	background-image: url(../assets/designer_Nicole.jpg);
+}
+
+/* documents */
+
+#documents {
+	width: 100%;
+	min-height: 400px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #282923;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.document-container {
+	border:	10px solid black;
+	background-color: whitesmoke;
+	width:	450px;
+	height: 400px;
+	margin: 2vw;
+}
+
+.download-container {
+	width: 100%;
+	height: 150px;
+	padding-top: 40px;
+	background-color: #282923;
+}
+
+.download-container:hover {
+	background-color: whitesmoke;
+	height: 130px;
+	border-top: 10px solid #282923;
+	border-bottom: 10px solid #282923;
+	cursor: pointer;
+}
+
+.download-container:hover > .download-icon{
+	background-image: url(../assets/download.png);
+}
+
+.document-title {
+	padding: 20px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.document-title span {
+	font-weight: normal;
+	font-size: 20px;
+}
+
+.document-description {
+	padding: 0 20px 0 20px;
+}
+
+.download-icon {
+	margin: 0 auto;
+	height: 110px;
+	width: 80px;
+	background-image: url(../assets/download_white.png);
+	background-size: contain;
+}
+/* project */
+
+#project {
+	width: 100%;
+	background-color: #282923;
+}
+
+#project div {
+	color: whitesmoke;
+	font-size: 20px;
+	padding: 25px;
+	line-height: 25px;
+}
+
+/* contact */
+
+#contact {
+	position: relative;
+	width: 100%;
+	background-color: #282923;;
+	box-shadow: 0px 19px 20px #BBBBBB;
+	z-index: 1;
+}
+
+#email-info {
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 190px;
+	height: 100%;
+}
+
+#email-info a {
+	text-decoration: none;
+	color: whitesmoke;
+	font-size: 20px;
+
+}
+
+#email-icon {
+	width: 190px;
+	height: 150px;
+	background-image: url(../assets/email-white.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+
+/* disclaimer */
+
+#disclaimer {
+	position: relative;
+	z-index: 0;
+	width: 100%;
+	background-color: white;
+}
+
+#disclaimer p {
+	padding: 20px;
+}
+
+/* other */
+
+.hidden-text {
+	visibility: hidden;
+	user-select: none;
+}
+
+.unbold-h1 {
+	text-align: center;
+	font-weight: normal;
+}
+
+@media (max-width: 400px) {
+  #team {
+    display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+  #header {
+  	height: 400px;
+  }
+  nav #company {
+  	display: none;
+  }
+}
+
+@media (max-width: 1400px) {
+  nav #company-icon {
+  	display: none;
+  }
+  nav #company {
+  	margin-left: 25px;
+  }
+}
+
+/**/
